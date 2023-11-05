@@ -1,0 +1,15 @@
+.login-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.5lh 0.5rem;
+}
+
+.form {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.login-button {
+    width: fit-content;
+}

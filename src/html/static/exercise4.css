@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+}

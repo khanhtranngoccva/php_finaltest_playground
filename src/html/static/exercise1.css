@@ -1,34 +1,45 @@
-
-
-h1, h2, h3, li, ul {
-    list-style: none;
-    padding-left: 0;
-    line-height: 1.2em;
-    font-size: 1rem;
-    margin-block: 0;
-    padding-block: 0.125rem;
-    font-weight: 400;
-    font-family: "system-ui";
+.db-table {
+    /*border: 1px solid black;*/
+    border-spacing: 0;
 }
 
-ul {
-    padding-left: 5ch;
-    overflow: hidden;
+.container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-li {
-    position: relative;
+.portion {
+    /*flex: 1;*/
 }
 
+.db-table th {
+    border: 1px solid black;
+}
 
-li::before {
-    position: absolute;
-    content: "";
-    border: solid black;
-    border-width: 0 0 1px 1px;
-    width: 2ch;
-    height: 9999px;
-    top: calc(0.5lh + 0.25rem);
-    left: -2.5ch;
-    transform: translateY(-100%);
+.db-table td:last-of-type {
+    border-right: 1px solid black;
+}
+
+.db-table tr:last-of-type td {
+    border-bottom: 1px solid black;
+}
+
+.db-table td {
+    border-left: 1px solid black;
+    padding-inline: 0.5rem 0.5rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.db-table tbody tr:nth-of-type(2n) {
+    background: #d2eaff;
+}
+
+.db-table thead {
+    background: deepskyblue ;
 }

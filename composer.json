@@ -1,11 +1,12 @@
 {
-    "name": "admin/php_finaltest_playground",
-    "require": {
-        "monolog/monolog": "^3.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Admin\\PhpFinaltestPlayground\\": "src/"
-        }
+  "name": "admin/php_finaltest_playground",
+  "require": {
+    "monolog/monolog": "^3.5",
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Admin\\PhpFinaltestPlayground\\": "src/"
     }
+  }
 }

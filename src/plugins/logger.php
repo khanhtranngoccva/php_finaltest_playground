@@ -25,19 +25,19 @@ class Logger extends \Monolog\Logger
         return var_export($data, true);
     }
 
-    function info($message, array $context = []): void
+    function info(mixed $message, array $context = []): void
     {
         $output = Logger::_get_output($message);
         parent::info($output);
     }
 
-    public function warning($message, array $context = []): void
+    public function warning(mixed $message, array $context = []): void
     {
         $output = Logger::_get_output($message);
         parent::warning($output);
     }
 
-    public function error($message, array $context = []): void
+    public function error(mixed $message, array $context = []): void
     {
         $output = Logger::_get_output($message);
         parent::error($output);

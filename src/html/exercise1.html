@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/exercise1.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="container">
+    <table class="db-table portion">
+        <thead>
+        <tr>
+            <th colspan="9999">account</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="bold">PK</td>
+            <td class="bold">accountID</td>
+            <td>int</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>username</td>
+            <td>varchar</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>password</td>
+            <td>varchar</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="db-table portion">
+        <thead>
+        <tr>
+            <th colspan="9999">photo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="bold">PK</td>
+            <td class="bold">photoID</td>
+            <td>int</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>data</td>
+            <td>varchar</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="db-table portion">
+        <thead>
+        <tr>
+            <th colspan="9999">account_photo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="bold">FK</td>
+            <td class="bold">accountID</td>
+            <td>int</td>
+        </tr>
+        <tr>
+            <td class="bold">FK</td>
+            <td class="bold">photoID</td>
+            <td>int</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
