@@ -1,0 +1,33 @@
+version: "2"
+services:
+  database:
+    image: "mysql"
+    tty: true
+    networks:
+      - primary
+    restart: "always"
+    ports:
+      - "1337:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "metrics"
+    volumes:
+      - "_database:/var/lib/mysql"
+  main:
+    image: "trafex/php-nginx"
+    working_dir: "/var/www"
+    tty: true
+    networks:
+      - primary
+    restart: "always"
+    volumes:
+      - ".:/var/www"
+      - "./config/nginx/conf.d:/etc/nginx/conf.d"
+    ports:
+      - "8000:8080"
+networks:
+  primary:
+    driver: "bridge"
+volumes:
+  _database:
+    driver: local
